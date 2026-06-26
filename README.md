@@ -374,23 +374,32 @@ This project can be further enhanced by:
 # 📁 Project Structure
 
 ```text
-Restaurant-Clustering/
+zomato_segmentation/
 │
-├── Dataset/
-│   └── zomato.csv
-│
-├── images/
-│   ├── banner.png
-│   ├── cost_distribution.png
-│   ├── cost_vs_rating.png
-│   ├── cuisine_popularity.png
-│   ├── most_reviewed_restaurants.png
-│   └── rating_distribution.png
-│
-├── zomato_project.ipynb
 ├── README.md
-├── requirements.txt
-└── LICENSE
+│
+└── zomato/
+    ├── data/
+    │   ├── Zomato_restaurant_data.xlsx
+    │   └── Zomato_restaurant_reviews.xlsx
+    │
+    ├── images/
+    │   ├── banner.png
+    │   ├── cost_distribution.png
+    │   ├── cost_vs_rating.png
+    │   ├── cuisine_popularity.png
+    │   ├── most_reviewed_restaurants.png
+    │   └── rating_distribution.png
+    │
+    ├── models/
+    │   ├── kmeans_model.pkl
+    │   └── scaler.pkl
+    │
+    ├── notebook/
+    │   └── zomato_segmentation.ipynb
+    │
+    ├── prediction.py
+    └── requirements.txt
 ```
 
 ---
