@@ -1,7 +1,7 @@
 # 🍽️ Restaurant Clustering & Segmentation using Machine Learning
 
 <p align="center">
-<img src="images/banner.png" width="100%">
+  <img src="zomato/images/zomato.png" width="750">
 </p>
 
 ## 📖 Project Overview
