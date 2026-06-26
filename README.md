@@ -110,7 +110,7 @@ Exploratory Data Analysis was performed to understand pricing patterns, customer
 # 💰 1. Restaurant Cost Distribution
 
 <p align="center">
-<![Cost Distribution](zomato/images/cost_distribution.png)>
+  <img src="zomato/images/cost_distribution.png" width="750">
 </p>
 
 ### 📖 Observation
