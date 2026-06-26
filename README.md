@@ -127,9 +127,7 @@ The restaurant market is primarily dominated by **budget and mid-range restauran
 
 # ⭐ 2. Average Cost vs Average Rating
 
-<p align="center">
-  <img src="zomato/images/cost_distribution.png" width="750">
-</p>
+
 
 ### 📖 Observation
 
