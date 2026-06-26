@@ -406,28 +406,57 @@ zomato_segmentation/
 
 # 💻 Installation
 
-Clone the repository:
+Follow these steps to set up the project on your local machine.
+
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Restaurant-Clustering.git
+git clone https://github.com/sidhi02/zomato_segmentation.git
 ```
 
-Navigate to the project directory:
+### 2️⃣ Navigate to the Project Directory
 
 ```bash
-cd Restaurant-Clustering
+cd zomato_segmentation
 ```
 
-Install the required libraries:
+### 3️⃣ Navigate to the Project Folder
+
+```bash
+cd zomato
+```
+
+### 4️⃣ Install the Required Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook:
+### 5️⃣ Launch Jupyter Notebook
 
 ```bash
-jupyter notebook
+jupyter notebook notebook/zomato.ipynb
+```
+
+---
+
+# ▶️ How to Run
+
+1. Clone the repository.
+2. Navigate to the **zomato** project folder.
+3. Install the required Python libraries using `requirements.txt`.
+4. Open **`notebook/zomato.ipynb`** in Jupyter Notebook.
+5. Run the notebook sequentially to perform:
+   - Data preprocessing
+   - Exploratory Data Analysis (EDA)
+   - Feature scaling
+   - Restaurant clustering using K-Means, Agglomerative Clustering, and DBSCAN
+   - Model evaluation and business insights
+
+To run the prediction script:
+
+```bash
+python prediction.py
 ```
 
 ---
@@ -465,6 +494,18 @@ pip install -r requirements.txt
 - Scikit-learn Documentation
 - Pandas Documentation
 - Matplotlib Documentation
+
+---
+
+# 👩‍💻 Author
+
+**Sidhi**
+
+Aspiring Data Analyst | Machine Learning Enthusiast
+
+Feel free to connect with me or explore my other projects on GitHub!
+
+GitHub: https://github.com/sidhi02
 
 ---
 
