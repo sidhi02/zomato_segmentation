@@ -363,7 +363,7 @@ The prediction pipeline performs the following steps:
 ### Example Prediction
 
 <p align="center">
-  <img src="zomato/images/prediction_result.png" width="700">
+  <img src="zomato/images/prediction.png" width="700">
 </p>
 
 The prediction module demonstrates how the trained clustering model can be used to classify new restaurants into meaningful business segments, making the project practical and deployment-ready.
@@ -413,6 +413,7 @@ zomato_segmentation/
     │   ├── cuisine_popularity.png
     │   ├── most_reviewed_restaurants.png
     │   └── rating_distribution.png
+    │   └── prediction.png
     │
     ├── models/
     │   ├── kmeans_model.pkl
