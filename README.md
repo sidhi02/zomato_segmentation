@@ -10,7 +10,7 @@ Restaurant businesses generate large amounts of operational and customer-related
 
 This project applies **Unsupervised Machine Learning** techniques to segment restaurants into meaningful clusters based on various attributes such as pricing, ratings, cuisines, and customer engagement. Three clustering algorithms—**K-Means**, **Agglomerative Clustering**, and **DBSCAN**—were implemented and compared to discover hidden patterns within the dataset.
 
-The resulting clusters provide valuable business insights that can support pricing strategies, customer targeting, market expansion, and restaurant recommendation systems.
+The resulting clusters provide valuable business insights that support pricing strategies, customer targeting, competitor analysis, market expansion, and restaurant segmentation. The trained K-Means model is also saved and can be used to classify new restaurants into the identified segments through the included prediction module.
 
 ---
 
@@ -71,34 +71,38 @@ These features were used to analyze restaurant behavior and perform clustering.
 # ⚙️ Project Workflow
 
 ```text
-Dataset
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Exploratory Data Analysis
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Feature Scaling
-    │
-    ▼
-Clustering Algorithms
-    │
-    ├── K-Means
-    ├── Agglomerative
-    └── DBSCAN
-    │
-    ▼
-Model Comparison
-    │
-    ▼
-Business Insights
+Restaurant & Review Datasets
+            │
+            ▼
+      Data Cleaning
+            │
+            ▼
+ Exploratory Data Analysis
+            │
+            ▼
+   Feature Engineering
+            │
+            ▼
+     Feature Scaling
+            │
+            ▼
+   Clustering Algorithms
+      ├── K-Means
+      ├── Agglomerative
+      └── DBSCAN
+            │
+            ▼
+     Model Evaluation
+            │
+            ▼
+ Restaurant Segmentation
+            │
+            ▼
+Prediction using Saved Model
+            │
+            ▼
+     Business Insights
 ```
-
 ---
 
 # 📊 Exploratory Data Analysis
@@ -345,17 +349,36 @@ The exploratory analysis and clustering results revealed several important busin
 
 ---
 
+# 🔮 Restaurant Segment Prediction
+
+In addition to clustering analysis, this project includes a **prediction module (`prediction.py`)** that classifies new restaurants into one of the learned clusters using the trained **K-Means** model.
+
+The prediction pipeline performs the following steps:
+
+- Loads the trained **K-Means** model and **StandardScaler**.
+- Accepts restaurant details as user input.
+- Applies the same preprocessing and feature scaling used during model training.
+- Predicts the appropriate restaurant segment.
+
+### Example Prediction
+
+<p align="center">
+  <img src="zomato/images/prediction_result.png" width="700">
+</p>
+
+The prediction module demonstrates how the trained clustering model can be used to classify new restaurants into meaningful business segments, making the project practical and deployment-ready.
+
+---
+
 # ✅ Conclusion
 
-This project demonstrates how **Unsupervised Machine Learning** can be used to uncover meaningful patterns within restaurant data without requiring predefined labels.
+This project demonstrates the practical application of **Unsupervised Machine Learning** for restaurant segmentation using the Zomato dataset. Through comprehensive data preprocessing, exploratory data analysis, feature engineering, and feature scaling, meaningful patterns were extracted from restaurant data.
 
-After performing data preprocessing, exploratory data analysis, and feature scaling, three clustering algorithms—**K-Means**, **Agglomerative Clustering**, and **DBSCAN**—were implemented to segment restaurants based on pricing, ratings, cuisines, and customer engagement.
+Three clustering algorithms—**K-Means**, **Agglomerative Clustering**, and **DBSCAN**—were implemented and evaluated to identify distinct restaurant segments. While **Agglomerative Clustering** achieved the highest Silhouette Score (**0.3702**), **K-Means** was selected for the final prediction module due to its simplicity, scalability, and easily interpretable cluster assignments.
 
-Among the evaluated models, **Agglomerative Clustering** achieved the highest Silhouette Score (**0.3702**), indicating the best cluster quality. However, **K-Means** was selected for final interpretation due to its simplicity, scalability, and easily interpretable cluster assignments.
+To extend the project's practical applicability, a **Restaurant Segment Prediction Module** was developed using the trained K-Means model. This enables new restaurants to be automatically classified into meaningful business segments based on their characteristics.
 
-The insights obtained from this project can support restaurant owners, food delivery platforms, and business analysts in making informed decisions related to pricing strategies, customer targeting, competitor analysis, and market expansion.
-
-Overall, this project highlights the value of data-driven restaurant segmentation and demonstrates how clustering techniques can transform raw restaurant data into actionable business insights.
+Overall, this project demonstrates how clustering techniques can transform raw restaurant data into actionable business insights, helping restaurant owners and business analysts make data-driven decisions related to pricing strategies, customer segmentation, competitor analysis, and market positioning.
 
 ---
 
@@ -458,16 +481,6 @@ To run the prediction script:
 ```bash
 python prediction.py
 ```
-
----
-
-# ▶️ How to Run
-
-1. Clone this repository.
-2. Install the required dependencies.
-3. Open `zomato_project.ipynb`.
-4. Run the notebook sequentially.
-5. Explore the visualizations, clustering results, and business insights.
 
 ---
 
