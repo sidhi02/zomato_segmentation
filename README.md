@@ -110,7 +110,7 @@ Exploratory Data Analysis was performed to understand pricing patterns, customer
 # 💰 1. Restaurant Cost Distribution
 
 <p align="center">
-<img src="images/cost_distribution.png" width="750">
+<img src="./images/cost_distribution.png" width="750">
 </p>
 
 ### 📖 Observation
