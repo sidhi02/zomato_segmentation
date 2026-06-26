@@ -127,7 +127,9 @@ The restaurant market is primarily dominated by **budget and mid-range restauran
 
 # ⭐ 2. Average Cost vs Average Rating
 
-
+<p align="center">
+  <img src="zomato/images/cost_vs_rating.png" width="750">
+</p>
 
 ### 📖 Observation
 
@@ -144,7 +146,7 @@ Higher pricing alone does not guarantee better customer satisfaction. Restaurant
 # 🍜 3. Most Popular Cuisines
 
 <p align="center">
-<img src="images/cuisine_popularity.png" width="750">
+  <img src="zomato/images/Cucuisine_popularity.png" width="750">
 </p>
 
 ### 📖 Observation
@@ -162,7 +164,7 @@ North Indian and Chinese cuisines dominate the restaurant market, indicating str
 # 🍽️ 4. Most Reviewed Restaurants
 
 <p align="center">
-<img src="images/most_reviewed_restaurants.png" width="750">
+  <img src="zomato/images/most_reviewed_restaurants.png" width="750">
 </p>
 
 ### 📖 Observation
@@ -180,7 +182,7 @@ Restaurants with higher customer engagement generally have stronger brand visibi
 # ⭐ 5. Rating Distribution
 
 <p align="center">
-<img src="images/rating_distribution.png" width="750">
+  <img src="zomato/images/rating_distribution.png" width="750">
 </p>
 
 ### 📖 Observation
