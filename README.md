@@ -293,57 +293,69 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) groups rest
 
 ---
 
-# 📈 Model Comparison
+# 📊 Model Comparison
 
-Three clustering algorithms were implemented and evaluated to understand their strengths and suitability for restaurant segmentation.
+To evaluate the effectiveness of the clustering techniques, three unsupervised learning algorithms were implemented and compared using the **Silhouette Score**, which measures how well each data point fits within its assigned cluster. A higher score indicates better-defined and more compact clusters.
 
-| Algorithm | Advantages | Limitations |
-|------------|------------|-------------|
-| K-Means | Fast, simple, interpretable | Requires predefined number of clusters |
-| Agglomerative | Reveals hierarchical relationships | Computationally expensive for large datasets |
-| DBSCAN | Detects noise and irregular clusters | Sensitive to parameter selection |
+| Algorithm | Silhouette Score | Performance |
+|------------|:----------------:|-------------|
+| **Agglomerative Clustering** | **0.3702** | 🥇 Best Cluster Separation |
+| **DBSCAN** | **0.3562** | 🥈 Good Performance |
+| **K-Means** | **0.3342** | 🥉 Good Performance |
 
-Among these methods, **K-Means** produced the most interpretable and well-separated clusters for this dataset, making it the preferred choice for segmenting restaurants.
+### 📖 Interpretation
+
+- **Agglomerative Clustering** achieved the highest Silhouette Score (**0.3702**), indicating the most compact and well-separated clusters.
+- **DBSCAN** also performed well by identifying dense restaurant groups while effectively handling noisy data.
+- **K-Means** produced meaningful clusters with slightly lower separation but remained computationally efficient and easy to interpret.
+
+### 💼 Final Model Selection
+
+Although **Agglomerative Clustering** achieved the highest Silhouette Score, **K-Means** was selected for final visualization and interpretation because of its simplicity, scalability, and clear cluster assignments. Its results are easier to explain and suitable for business-oriented restaurant segmentation.
 
 ---
 
 # 🎯 Cluster Interpretation
 
-The clustering process grouped restaurants with similar characteristics into distinct segments.
+The clustering process successfully grouped restaurants with similar characteristics into meaningful market segments.
 
-The identified clusters generally represented:
+The identified clusters generally represent:
 
-- 💰 Budget-friendly restaurants
-- 🍴 Mid-range restaurants
-- ⭐ Highly rated restaurants
-- 💎 Premium restaurants
-- 📈 Restaurants with strong customer engagement
+- 💰 **Budget-Friendly Restaurants** – Affordable restaurants with lower average costs that cater to price-conscious customers.
+- 🍽️ **Mid-Range Restaurants** – Restaurants offering balanced pricing and consistent customer ratings.
+- ⭐ **Highly Rated Restaurants** – Restaurants recognized for excellent customer satisfaction and high ratings.
+- 💎 **Premium Restaurants** – High-end restaurants targeting customers seeking premium dining experiences.
+- 📈 **High-Engagement Restaurants** – Restaurants with strong customer interaction reflected through reviews and ratings.
 
-These clusters provide valuable insights for market analysis, pricing strategies, and customer targeting.
+These clusters provide valuable insights for restaurant owners, food delivery platforms, and business analysts by identifying different market segments and customer preferences.
 
 ---
 
 # 💡 Key Business Insights
 
-Based on the exploratory analysis and clustering results, the following insights were identified:
+The exploratory analysis and clustering results revealed several important business insights:
 
-- Most restaurants fall within the budget and mid-range pricing categories.
-- Higher prices do not necessarily guarantee better customer ratings.
-- North Indian and Chinese cuisines dominate the restaurant market.
-- Customer ratings are generally high across the dataset.
-- Restaurant segmentation can support targeted marketing campaigns.
-- Businesses can use clustering to identify competitors within similar market segments.
-- Customer engagement plays an important role in restaurant popularity.
+- Most restaurants fall within the **budget and mid-range** pricing categories, indicating strong customer demand for affordable dining options.
+- Higher pricing does **not** necessarily guarantee better customer ratings, highlighting the importance of food quality and service.
+- **North Indian** and **Chinese** cuisines dominate the dataset, reflecting their widespread popularity among customers.
+- Customer ratings are largely concentrated between **4.0 and 5.0**, suggesting generally positive dining experiences.
+- Restaurant segmentation enables businesses to design targeted marketing campaigns for different customer groups.
+- Identifying similar restaurant clusters helps businesses perform competitor analysis and develop effective pricing strategies.
+- Combining pricing, ratings, cuisines, and customer engagement provides a more comprehensive understanding of restaurant performance than relying on a single factor.
 
 ---
 
 # ✅ Conclusion
 
-This project demonstrates how **Unsupervised Machine Learning** can uncover meaningful patterns within restaurant data without requiring predefined labels.
+This project demonstrates how **Unsupervised Machine Learning** can be used to uncover meaningful patterns within restaurant data without requiring predefined labels.
 
-By applying **K-Means**, **Agglomerative Clustering**, and **DBSCAN**, restaurants were successfully grouped into meaningful segments based on pricing, ratings, cuisines, and customer engagement.
+After performing data preprocessing, exploratory data analysis, and feature scaling, three clustering algorithms—**K-Means**, **Agglomerative Clustering**, and **DBSCAN**—were implemented to segment restaurants based on pricing, ratings, cuisines, and customer engagement.
 
-These insights can help restaurant owners and businesses make informed decisions related to pricing strategies, customer targeting, expansion planning, and market positioning.
+Among the evaluated models, **Agglomerative Clustering** achieved the highest Silhouette Score (**0.3702**), indicating the best cluster quality. However, **K-Means** was selected for final interpretation due to its simplicity, scalability, and easily interpretable cluster assignments.
+
+The insights obtained from this project can support restaurant owners, food delivery platforms, and business analysts in making informed decisions related to pricing strategies, customer targeting, competitor analysis, and market expansion.
+
+Overall, this project highlights the value of data-driven restaurant segmentation and demonstrates how clustering techniques can transform raw restaurant data into actionable business insights.
 
 ---
 
