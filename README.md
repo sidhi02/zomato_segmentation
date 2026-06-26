@@ -1,4 +1,4 @@
-# 🍽️ # 🍽️ Zomato Restaurant Segmentation using Unsupervised Machine Learning
+# 🍽️ Zomato Restaurant Segmentation using Unsupervised Machine Learning
 
 <p align="center">
   <img src="zomato/images/zomato.png" width="750">
